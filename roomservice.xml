@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="personal" fetch="https://github.com/no-leaks-inside"/>
-    <remote name="LineageOS"  fetch="https://github.com/LineageOS" />
-    <remote name="PE-devices" fetch="https://github.com/PixelExperience-Devices" />
-    <remote name="PE-blobs"   fetch="https://gitlab.pixelexperience.org/android/vendor-blobs" />
-
-    <project name="android_device_samsung_beyond0lte" path="device/samsung/beyond0lte" remote="personal" revision="derp" />
-    <project name="android_device_samsung_beyond1lte" path="device/samsung/beyond1lte" remote="personal" revision="lineage-19.1" />
-    <project name="android_device_samsung_beyond2lte" path="device/samsung/beyond2lte" remote="personal" revision="derp" />
-    <project name="android_device_samsung_beyondx" path="device/samsung/beyondx" remote="personal" revision="derp" />
-    <project name="android_device_samsung_d1" path="device/samsung/d1" remote="personal" revision="derp"/>
-    <project name="android_device_samsung_d2s" path="device/samsung/d2s" remote="personal" revision="derp" />
-    <project name="android_device_samsung_d2x" path="device/samsung/d2x" remote="personal" revision="derp" />
-    <project name="android_device_samsung_exynos9820-common" path="device/samsung/exynos9820-common" remote="personal" revision="lineage-19.1" />
-
-    <!--Vendor Tree-->
-    <project name="vendor_samsung"                   path="vendor/samsung"                   remote="PE-blobs"    revision="twelve" clone-depth="1" />
-    
-    <!--Kernel Tree - You can track from The LineageOS if you want-->
-    <project name="kernel_samsung_exynos9820"        path="kernel/samsung/exynos9820"        remote="PE-devices"  revision="twelve" clone-depth="1" />
-    
-    <!-- Dependenciens -->
-    <project name="android_device_samsung_slsi_sepolicy"    path="device/samsung_slsi/sepolicy"      remote="LineageOS"   revision="lineage-19.1" />
-    <project name="android_hardware_samsung"                path="hardware/samsung"                  remote="personal"   revision="lineage-19.1" />
-
+  <project name="lineageos/android_vendor_samsung_r8q"              path="vendor/samsung/r8q"             remote="github" revision="lineage-21" />
+  <project name="lineageos/android_vendor_samsung_sm8250-common"    path="vendor/samsung/sm8250-common"   remote="github" revision="lineage-21" />
+  <project name="lineageos/android_device_samsung_r8q"              path="device/samsung/r8q"             remote="github" revision="lineage-21" />
+  <project name="lineageos/android_device_samsung_sm8250-common"    path="device/samsung/sm8250-common"   remote="github" revision="lineage-21" />
+  <project name="lineageos/android_kernel_samsung_sm8250"           path="kernel/samsung/sm8250"          remote="github" revision="lineage-21" />
 </manifest>
